@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    color: white;
+
+    background:
+        radial-gradient(circle at top left,
+            #ff9a9e,
+            transparent 40%),
+
+        linear-gradient(135deg,
+            #ff4f81,
+            #7b2ff7);
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================
+   GENERAL PAGE
+========================= */
+
+.page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    position: relative;
+
+}
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+h1 {
+
+    font-size: clamp(40px, 8vw, 75px);
+
+    line-height: 1;
+
+    margin: 20px 0;
+
+}
+
+
+h2 {
+
+    font-size: 32px;
+
+    margin: 15px 0;
+
+}
+
+
+p {
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.secret {
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
+    font-weight: bold;
+
+}
+
+
+.gift-box {
+
+    font-size: 130px;
+
+    animation: giftBounce 1.5s infinite;
+
+}
+
+
+.intro-text {
+
+    max-width: 500px;
+
+    font-size: 19px;
+
+    margin: 10px 0;
+
+}
+
+
+h1 span {
+
+    color: #ffe66d;
+
+}
+
+
+button {
+
+    border: none;
+
+    padding: 17px 32px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #ff3974;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+button:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* =========================
+   BIRTHDAY
+========================= */
+
+.surprise-text {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #ffe66d;
+
+}
+
+
+.birthday {
+
+    font-size: clamp(55px, 12vw, 100px);
+
+    text-shadow:
+        5px 5px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+
+.birthday span {
+
+    color: #ffe66d;
+
+}
+
+
+#personName {
+
+    font-size: 38px;
+
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo-container {
+
+    width: 270px;
+
+    height: 270px;
+
+    border-radius: 50%;
+
+    padding: 8px;
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.3);
+
+    animation: photoFloat 3s infinite;
+
+}
+
+
+.photo-container img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+
+.birthday-message {
+
+    max-width: 650px;
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    max-width: 700px;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.18);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.card-icon {
+
+    font-size: 60px;
+
+}
+
+
+.card h1 {
+
+    font-size: 40px;
+
+}
+
+
+.card p {
+
+    font-size: 18px;
+
+    margin: 20px 0;
+
+}
+
+
+.funny-message {
+
+    background: rgba(255, 255, 255, 0.2);
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+
+    color: #ffe66d;
+
+}
+
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: 30px auto;
+
+}
+
+
+.photo-card {
+
+    background: white;
+
+    padding: 8px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: 0.4s;
+
+}
+
+
+.photo-card:nth-child(odd) {
+
+    transform: rotate(-4deg);
+
+}
+
+
+.photo-card:nth-child(even) {
+
+    transform: rotate(4deg);
+
+}
+
+
+.photo-card:hover {
+
+    transform:
+        rotate(0deg) scale(1.08);
+
+}
+
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================
+   FINAL PAGE
+========================= */
+
+.cake {
+
+    font-size: 140px;
+
+    animation: cakeBounce 1.5s infinite;
+
+}
+
+
+.final-title {
+
+    color: #ffe66d;
+
+    text-shadow:
+        4px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+#finalName {
+
+    font-size: 40px;
+
+}
+
+
+.final-message {
+
+    font-size: 20px;
+
+    max-width: 600px;
+
+}
+
+
+.final-joke {
+
+    margin-top: 25px;
+
+    padding: 20px 30px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.2);
+
+    font-weight: bold;
+
+}
+
+
+.from {
+
+    margin-top: 30px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+.celebration {
+
+    font-size: 45px;
+
+    margin-top: 25px;
+
+}
+
+
+/* =========================
+   FLOATING EMOJIS
+========================= */
+
+.floating {
+
+    position: fixed;
+
+    bottom: -80px;
+
+    font-size: 40px;
+
+    animation: floatUp 8s linear infinite;
+
+    z-index: -1;
+
+}
+
+
+.floating:nth-child(1) {
+
+    left: 10%;
+
+    animation-delay: 0s;
+
+}
+
+
+.floating:nth-child(2) {
+
+    left: 30%;
+
+    animation-delay: 2s;
+
+}
+
+
+.floating:nth-child(3) {
+
+    left: 55%;
+
+    animation-delay: 4s;
+
+}
+
+
+.floating:nth-child(4) {
+
+    left: 75%;
+
+    animation-delay: 1s;
+
+}
+
+
+.floating:nth-child(5) {
+
+    left: 90%;
+
+    animation-delay: 3s;
+
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes giftBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+
+}
+
+
+@keyframes photoFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+@keyframes cakeBounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+}
+
+
+@keyframes floatUp {
+
+    0% {
+
+        bottom: -100px;
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        bottom: 110%;
+
+        transform:
+            translateX(100px) rotate(20deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .photo-card img {
+
+        height: 160px;
+
+    }
+
+
+    .photo-container {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+
+    .card {
+
+        padding: 25px;
+
+    }
+
+
+    .card h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .cake {
+
+        font-size: 100px;
+
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .photo-card img {
+
+        height: 250px;
+
+    }
+
+}

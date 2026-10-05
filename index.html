@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating decorations -->
+    <div class="floating">🎈</div>
+    <div class="floating">🎈</div>
+    <div class="floating">🎈</div>
+    <div class="floating">✨</div>
+    <div class="floating">🎉</div>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section id="intro" class="page">
+
+        <div class="gift-box">
+            🎁
+        </div>
+
+        <p class="secret">PSSST... HEY YOU 👀</p>
+
+        <h1>
+            You have a<br>
+            <span>special surprise!</span>
+        </h1>
+
+        <p class="intro-text">
+            Someone has prepared something for you...
+            but you'll have to open it yourself. 😏
+        </p>
+
+        <button onclick="openGift()">
+            OPEN MY SURPRISE 🎁
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         BIRTHDAY
+    ========================== -->
+
+    <section id="birthday" class="page hidden">
+
+        <p class="surprise-text">
+            SURPRISE!!! 🎉🎉🎉
+        </p>
+
+        <h1 class="birthday">
+            HAPPY<br>
+            <span>BIRTHDAY!</span>
+        </h1>
+
+        <h2 id="personName">
+            YOUR NAME 🎂
+        </h2>
+
+        <div class="photo-container">
+
+            <img src="images/photo 1.jpeg" alt="Birthday person">
+
+        </div>
+
+        <p class="birthday-message">
+
+            Congratulations! 🥳
+
+            <br><br>
+
+            You've officially survived another year
+            of life, work, meetings, deadlines,
+            emails and pretending to understand
+            what was discussed in meetings. 😂
+
+        </p>
+
+        <button onclick="nextPage()">
+            WAIT... THERE'S MORE 👀
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         MESSAGE
+    ========================== -->
+
+    <section id="message" class="page hidden">
+
+        <div class="card">
+
+            <div class="card-icon">
+                💌
+            </div>
+
+            <h1>
+                A Little Birthday Message
+            </h1>
+
+            <p>
+
+                Today is your special day,
+                so we're taking a short break
+                from pretending to work. 😂
+
+            </p>
+
+            <p>
+
+                We wish you happiness,
+                success, good health,
+                more money 💰 and many
+                amazing opportunities.
+
+            </p>
+
+            <p>
+
+                May your dreams become reality
+                and may this new year of your life
+                be better than the last one.
+
+            </p>
+
+            <div class="funny-message">
+
+                😂 IMPORTANT NOTICE 😂
+
+                <br><br>
+
+                May your salary increase...
+
+                <br>
+
+                faster than your workload!
+
+            </div>
+
+        </div>
+
+
+        <button onclick="showPhotos()">
+            SHOW ME THE EVIDENCE 📸
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         PHOTOS
+    ========================== -->
+
+    <section id="photos" class="page hidden">
+
+        <p class="surprise-text">
+            THE BIRTHDAY ARCHIVES 📸
+        </p>
+
+        <h1>
+            Some Moments...
+        </h1>
+
+        <p class="intro-text">
+            We searched through the archives
+            and found these masterpieces. 😂
+        </p>
+
+
+        <div class="gallery">
+
+            <div class="photo-card">
+                <img src="images/photo 1.jpeg" alt="Memory 1">
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo2.jpeg" alt="Memory 2">
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo 1.jpeg" alt="Memory 3">
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo2.jpeg" alt="Memory 4">
+            </div>
+
+        </div>
+
+
+        <button onclick="finalSurprise()">
+            ONE LAST SURPRISE 🎁
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section id="final" class="page hidden">
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <h1 class="final-title">
+            HAPPY BIRTHDAY! 🎉
+        </h1>
+
+        <h2 id="finalName">
+            YOUR NAME
+        </h2>
+
+        <p class="final-message">
+
+            May your day be filled with laughter,
+            happiness and cake.
+
+            <br><br>
+
+            And remember...
+
+        </p>
+
+        <div class="final-joke">
+
+            🎂 CALORIES DON'T COUNT ON YOUR BIRTHDAY! 🎂
+
+        </div>
+
+        <p class="from">
+
+            ❤️ From your work colleagues
+
+        </p>
+
+        <div class="celebration">
+
+            🎈 🎉 🥳 🎁 🎂 🎊
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
